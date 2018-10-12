@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <title>test</title>
+</head>
+<body>
+<div class="container">
+    <ul class="cbp-vimenu">
+        <li><a href="#" class="icon-logo"></a></li>
+        <li><a href="#" class="board"><img class="icon-board" src="img/icon1.svg" alt="logo"><span>Dashboard</span></a>
+        </li>
+        <li><a href="#" class="set"><img class="icon-set" src="img/icon2.svg" alt="logo"><span>Settings</span></a>
+        </li>
+        <li><a href="#" class="plan"><img class="icon-plan" src="img/icon3.svg" alt="logo"><span>My plan</span></a>
+        </li>
+        <li class="push"><a href="#" class="log-out"><img class="icon-log-out" src="img/icon4.svg" alt="logo"><span>Log out</span></a>
+        </li>
+    </ul>
+    <div class="main">
+        <form class="main__form" action="/" method="post">
+            <div class="local">
+                <label for="loc">location</label>
+                <input type="text" id="loc">
+                <span>or</span>
+                <button>
+                    <a data-fancybox data-src="#popup" href="javascript:">
+                        <img src="img/icon_map.png" alt="map">
+                    </a>
+                </button>
+            </div>
+            <span class="size">size</span>
+            <div class="range-size">
+
+                <div id="range" data-min="100" data-max="1000" data-text="m"></div>
+                <div class="range-min">100m<sup>2</sup></div>
+                <div class="range-max">1000m<sup>2</sup></div>
+            </div>
+        </form>
+    </div>
+</div>
+<div style="display: none;" id="popup">
+    <div class="wrapper">
+        <div class="box">Tipe to find address</div>
+        <div id="map" class="map__wrapper" data-map-wrapper></div>
+    </div>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLTAShVprPYHybVidiugU3uu9lldYS7X0&callback=initMap"
+        type="text/javascript"></script>
+<script src="js/wNumb.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
