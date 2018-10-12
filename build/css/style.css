@@ -95,7 +95,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
     .container .main .main__form {
-      width: 46.6%;
+      width: 47%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -126,20 +126,22 @@ body {
         .container .main .main__form .local span {
           padding-left: 20px;
           padding-right: 20px; }
-        .container .main .main__form .local button {
-          width: 36px;
-          height: 36px;
-          margin-top: 4px;
+        .container .main .main__form .local a {
           border: solid 1px #c5c9fd;
           -webkit-border-radius: 8px;
-                  border-radius: 8px; }
-          .container .main .main__form .local button img {
-            padding-top: 2px; }
+                  border-radius: 8px;
+          padding: 8px 11px; }
+          .container .main .main__form .local a img {
+            padding-top: 2px;
+            position: relative;
+            top: 2px; }
         .container .main .main__form .local input {
           border: none;
           border-bottom: 1px solid #d8d9e4;
           width: 495px;
           line-height: 2; }
+          .container .main .main__form .local input:focus {
+            outline: none; }
       .container .main .main__form .size {
         position: relative;
         top: 20px;
